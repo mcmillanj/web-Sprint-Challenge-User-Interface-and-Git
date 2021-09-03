@@ -28,9 +28,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+ body { 
 	line-height: 1;
-}
+} 
 ol, ul {
 	list-style: none;
 }
@@ -46,9 +46,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* ======================================
+ unversial
+ ========================================
+*/
 * {
     box-sizing: border-box;
+    /* border:1px solid red; */
+    /* margin:0; 
+    max-width: 100%; */ /*8effecting my page format*/
 }
 
 html, body {
@@ -64,12 +70,139 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
-}
-
+    color:black;
+     /* width:100%;  */
+    }
+/* =========================================================
+header section index.html
+==============================================================
+*/
 .container {
     width: 800px;
     margin: 0 auto;
+    /* width: 2000px;/*was 800px*/
+    /*margin: 60px auto; */
+    
 }
+ .navigation {
+    display:flex;
+    font-size: 15px;
+    background-color: white;
+    /* justify-content: space-between; */
+    /* flex-direction: row; */
+}
+.navigation ul {/*added all this*/
+    text-decoration:none;
+    /* list-style-type: none; */
+    margin: 0;
+    padding: 0;
+    display:flex; 
+    justify-content:space-between;
+  }
+.navigation, ul, li {
+  /* display:flex; 
+  justify-content:space-between; */
+  /* padding: 0 auto; */
+  padding: 3rem;/*added*/
+  flex:auto;/*aded*/
+  text-align: center;/*added*/
+}
+.navigation, ul, li, a {
+  text-decoration: none;
+  padding: 3rem;/*added*/
+  /* padding: 0px 60px; */
+  
+  color:black;
+  margin-right: 0px;
+  
+  
+} 
+
+.navigation, h1.img {
+    margin-right: 20px;
+    
+}
+.topimg {
+    padding: 3rem;
+width:800px;
+height:200px;
+ margin-top: 20px;
+ 
+ background-image:url(../img/jumbo.jpg) ;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+}
+div.topimg {
+    /* padding-left: 600px; */
+display: flex;
+justify-content: center;
+
+}
+/* =======================================
+header section about.html
+
+=============================================
+*/
+   .nav2 {
+    font-size: 15px;  
+    display:flex;
+    background-color: white;
+    
+   }
+   
+   .nav2 ul {
+
+    margin: 0;
+     padding: 0;
+     text-decoration:none;
+        
+   }
+   
+   
+   .nav2 ul {
+    margin: 0;
+    padding: 0; 
+     display: flex;
+     justify-content: space-around;
+   }
+   .nav2 ul li {     
+     padding: 3rem;
+     flex: auto;
+     text-align: center;
+   }
+   .nav2 ul li a{
+       color: black;
+       text-decoration: none;
+   }
+   /* ======================================
+   pcture section
+   =========================================
+   */
+   .button {
+    font-size: 16px;
+    border-radius: 15px; 
+       border: 2px solid #000;
+       background-color: white;
+       padding: 10px 32px;
+       
+   }
+   
+   .pic-cont {
+       display: flex;
+     align-items: flex-start;
+   }
+   
+   .pic-cont2 {
+       display: flex;
+     align-items: flex-start;
+   }
+
+
+/* ============================
+mddle section
+==============================
+*/
 
 .top-content {
     display: flex;
@@ -84,7 +217,10 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+/* =====================================================
+boxes
+========================================================
+*/
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -111,7 +247,43 @@ p {
     align-items: center;
     justify-content: center;
 }
-
+/* my code */
+.middle-content .boxes .box1{
+    background-color: teal;
+  }
+  .middle-content .boxes .box2{
+    background-color: gold;
+  }
+  .middle-content .boxes .box3{
+    background-color: cadetblue;
+  } 
+  .middle-content .boxes .box4{
+    background-color: coral;
+  }
+  .middle-content .boxes .box5{
+    background-color: crimson;
+  }
+  
+  .middle-content .boxes .box6{
+    background-color: forestgreen;
+  }
+  .middle-content .boxes .box7{
+    background-color: darkorchid;
+  }
+  .middle-content .boxes .box8{
+    background-color: hotpink;
+  }
+  .middle-content .boxes .box9{
+    background-color: indigo;
+  }
+  .middle-content .boxes .box10{
+    background-color:dodgerblue;
+  }
+ /* ========================================================
+  
+  boxes end
+  ============================================================
+  */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,6 +297,7 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
 
 footer {
     width: 100%;
